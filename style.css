@@ -1,0 +1,223 @@
+:root {
+    --soft-pink: #FFE8F0;
+    --ivory: #FFFDF5;
+    --beige: #F5F0E6;
+    --light-sage: #E8F4E8;
+    --dark-pink: #D4A5B5;
+    --text-dark: #5A5A5A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+}
+
+body {
+    background-color: var(--ivory);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--soft-pink), var(--light-sage));
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(212, 165, 181, 0.1);
+}
+
+.brand-title {
+    color: #D4A5B5;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background-color: var(--soft-pink);
+    color: #D4A5B5;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--dark-pink);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #C895A5;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--light-sage);
+    color: var(--text-dark);
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(212, 165, 181, 0.08);
+    margin-bottom: 25px;
+    border: 1px solid rgba(212, 165, 181, 0.1);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    background: linear-gradient(135deg, var(--soft-pink), var(--beige));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-pink);
+    font-size: 3rem;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    color: #D4A5B5;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.product-price {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-skincare {
+    background-color: var(--soft-pink);
+    color: #D4A5B5;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 165, 181, 0.1);
+}
+
+.table th {
+    background-color: var(--soft-pink);
+    color: #D4A5B5;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(212, 165, 181, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--dark-pink);
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    color: var(--text-dark);
+    border-top: 1px solid rgba(212, 165, 181, 0.1);
+}
