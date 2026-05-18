@@ -1,0 +1,18 @@
+PS C:\laragon\www\perpustakaanpplg1> git init
+Reinitialized existing Git repository in C:/laragon/www/perpustakaanpplg1/.git/
+PS C:\laragon\www\perpustakaanpplg1> git git add .
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\laragon\www\perpustakaanpplg1> git add .
+PS C:\laragon\www\perpustakaanpplg1> git commit -m "versi 2"
+On branch main
+nothing to commit, working tree clean
+PS C:\laragon\www\perpustakaanpplg1> git branch -M main
+PS C:\laragon\www\perpustakaanpplg1> git remote add origin https://github.com/annisamega/projectpertama2026.git
+error: remote origin already exists.
+PS C:\laragon\www\perpustakaanpplg1> git push origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/annisamega/projectpertama2026.git/' not found
+PS C:\laragon\www\perpustakaanpplg1>
